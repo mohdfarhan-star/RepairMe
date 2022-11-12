@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{ url_for('static' , filename='images3/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='vendor3/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='fonts3/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='vendor3/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='vendor3/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='vendor3/perfect-scrollbar/perfect-scrollbar.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='css3/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='css3/main.css') }}">
+<!--===============================================================================================-->
+
+
+
+
+
+
+
+
+<style >
+	.btnd {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+
+
+	
+
+
+<hr>
+<hr>
+<hr>
+
+	
+
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				
+
+<h1>Here you can manage and edit services</h1><hr>
+<a href="/editservice/0"><button class="btnd">New Service</button></a> <a href="/"><button class="btnd">Home</button></a> 
+<a href="/logout"><button class="btnd">Logout</button></a>
+<hr>
+
+<!-- TABLE START FROM HERE -->
+				
+
+				<div class="table100 ver3 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">sno</th>
+									<th class="cell100 column2">title</th>
+									<th class="cell100 column3">description</th>
+									<th class="cell100 column4">icon</th>
+									<th class="cell100 column5">color</th>
+									<th class="cell100 column5">date</th>
+									<th class="cell100 column5">cat1</th>
+									<th class="cell100 column5">cat2</th>
+									<th class="cell100 column5">cat3</th>
+									<th class="cell100 column6">Edit</th>
+									<th class="cell100 column7">Delete</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								
+
+{% for service in services %}
+
+								<tr class="row100 body">
+									<td class="cell100 column1">{{service.sno}}</td>
+									<td class="cell100 column2">{{service.title}}</td>
+									<td class="cell100 column3">{{service.description}}</td>
+									<td class="cell100 column4">{{service.icon}}</td>
+									<td class="cell100 column5">{{service.color}}</td>
+									<td class="cell100 column5">{{service.date}}</td>
+									<td class="cell100 column5">{{service.cat1}}</td>
+									<td class="cell100 column5">{{service.cat2}}</td>
+									<td class="cell100 column5">{{service.cat3}}</td>
+									
+
+
+									<td class="cell100 column6"><a href="/editservice/{{service.sno}}"><button>Edit</button></a></td>
+									<td class="cell100 column7"><a href="/delete/{{service.sno}}"><button>Delete</button></a></td>
+								</tr>
+
+								
+{% endfor %}    
+
+
+
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				
+
+
+
+
+
+
+<h1>This is contact home table</h1><hr>
+
+
+				
+				
+
+
+
+
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">sno</th>
+									<th class="cell100 column2">name</th>
+									<th class="cell100 column3">phone number</th>
+									<th class="cell100 column4">Email</th>
+									<th class="cell100 column5">Subject</th>
+									<th class="cell100 column6">message</th>
+									<th class="cell100 column7">date</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								
+
+
+
+{% for contact in contacts %}
+
+
+
+								<tr class="row100 body">
+									<td class="cell100 column1">{{contact.sno}}</td>
+									<td class="cell100 column2">{{contact.name}}</td>
+									<td class="cell100 column3">{{contact.phone_num}}</td>
+									<td class="cell100 column4">{{contact.email}}</td>
+									<td class="cell100 column5">{{contact.subject}}</td>
+									<td class="cell100 column6">{{contact.msg}}</td>
+									<td class="cell100 column7">{{contact.date}}</td>
+								</tr>
+
+								
+
+
+{% endfor %} 
+
+
+
+
+
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				
+
+<h1>This is Service Request table</h1><hr><br>
+
+
+
+				<div class="table100 ver5 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								
+
+
+
+
+								<tr class="row100 head">
+									<th class="cell100 column1">sno</th>
+									<th class="cell100 column2">name</th>
+									<th class="cell100 column3">email</th>
+									<th class="cell100 column4">phone number</th>
+									<th class="cell100 column5">service</th>
+									<th class="cell100 column1">area</th>
+									<th class="cell100 column2">location</th>
+									<th class="cell100 column3">date</th>
+									<th class="cell100 column4">service date</th>
+									<th class="cell100 column5">service time</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								
+
+
+
+
+{% for bookservice in bookservices %}
+
+
+
+								<tr class="row100 body">
+									<td class="cell100 column1">{{bookservice.sno}}</td>
+									<td class="cell100 column2">{{bookservice.name}}</td>
+									<td class="cell100 column3">{{bookservice.email}}</td>
+									<td class="cell100 column4">{{bookservice.phone}}</td>
+									<td class="cell100 column5">{{bookservice.category}}</td>
+									<td class="cell100 column1">{{bookservice.area}}</td>
+									<td class="cell100 column2">{{bookservice.location}}</td>
+									<td class="cell100 column3">{{bookservice.date}}</td>
+									<td class="cell100 column4">{{bookservice.service_date}}</td>
+									<td class="cell100 column5">{{bookservice.service_time}}</td>
+								</tr>
+
+
+{% endfor %} 
+								
+
+
+
+
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				
+
+
+
+<!--===============================================================================================-->	
+	<script src="{{ url_for('static' , filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static' , filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static' , filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static' , filename='vendor/select2/select2.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static' , filename='vendor/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+			
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static' , filename='js/main.js') }}"></script>
+
+
+<!--   Core JS Files odf black dashboard  -->
+  
+
+
+
+  
+
+
+<!-- end of black dashboard js flile -->
+
+
+
+</body>
+</html>

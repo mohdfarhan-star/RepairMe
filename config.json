@@ -1,0 +1,37 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/renewa10",
+    "prod_uri": "mysql://root:@localhost/",
+    "fb_url": "https://facebook.com",
+    "tw_url": "https://twitter.com",
+    "gt_url": "https://github.com",
+    "wt_url": "https://whatsapp.com",
+    "li_url": "https://linkedin.com",
+    "in_url": "https://instagram.com",
+
+    "blog_name": "Sky Blogs",
+    "tag_line": "Beyond The Limits",
+    "gmail-user": "sv9204081@gmail.com",
+    "gmail-password": "SHubh@5467" ,
+    "about_text" : " Hello! My name is Rex , and I am a good boy." ,
+    "no_of_services" : 2,
+    "admin_user" : "shubh",
+    "admin_password" : "shubh@5467",
+    "login_img": "login.svg",
+    "upload_location" : "C:\\Users\\REX\\Documents\\Python Saved Projects\\flask1\\static",
+    "Happy_Users" : "5",
+    "Verified_Experts" : "10",
+    "Month_of_experience" : "15",
+    "Categories" : "1150",
+    "HA_cat1" : "AC",
+    "HA_cat2" : "TV",
+    "HA_cat3" : "Refrigerator",
+    "HA_cat4" : "Washing Machine"
+
+
+
+  }
+
+}
