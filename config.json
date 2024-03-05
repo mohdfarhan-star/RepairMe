@@ -1,9 +1,9 @@
 {
   "params":
   {
-    "local_server": "True",
+    "local_server": "False",
     "local_uri": "mysql://root:@localhost/renewa10",
-    "prod_uri": "mysql://root:@localhost/",
+    "prod_uri": "mysql://mohdfarhan-star:mfk@10786@https://repairme.onrender.com/renewa10",
     "fb_url": "https://facebook.com",
     "tw_url": "https://twitter.com",
     "gt_url": "https://github.com",
