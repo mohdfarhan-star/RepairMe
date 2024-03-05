@@ -110,11 +110,11 @@ def bookservice(service_slug):
 
 
         
-        mail.send_message(
-                          sender=email,
-                          recipients=[params['gmail-user']],
-                          body=location + "\n" + phone
-                          )
+        # mail.send_message(
+        #                   sender=email,
+        #                   recipients=[params['gmail-user']],
+        #                   body=location + "\n" + phone
+        #                   )
 
         return render_template('confirm.html')
 

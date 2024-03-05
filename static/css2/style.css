@@ -10,12 +10,13 @@
 	right: 0;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+	background-color: grey;
 }
 
 #booking {
 	font-family: 'Montserrat', sans-serif;
-	background-image: url('../img/background.jpg');
-	background-size: cover;
+	background-image: url('../img/background.jpg'); */
+	background-size: cover; 
 	background-position: center;
 }
 
@@ -45,7 +46,7 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #ffc001;
-	margin: 0px;
+	margin-top: 300px;
 }
 
 .booking-form>form {
