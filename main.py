@@ -299,5 +299,5 @@ def terms():
 def privacy():
     return render_template('policy.html', params=params)
 
-if __name__=='__main__'
+if __name__=='__main__':
     app.run(debug=True)
