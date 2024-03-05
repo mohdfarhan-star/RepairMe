@@ -3,7 +3,9 @@
   {
     "local_server": "False",
     "local_uri": "mysql://root:@localhost/renewa10",
-    "prod_uri": "mysql://mohdfarhan-star:mfk@10786@https://repairme.onrender.com/renewa10",
+    "prod_uri": "mysql://mohdfarhan-star:mfk@10786@13.228.225.19
+18.142.128.26
+54.254.162.138/renewa10",
     "fb_url": "https://facebook.com",
     "tw_url": "https://twitter.com",
     "gt_url": "https://github.com",
