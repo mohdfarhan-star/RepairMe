@@ -2,7 +2,7 @@
   "params":
   {
     "local_server": "False",
-    "local_uri": "mysql://root:@127.0.0.1/alchemy_10",
+    "local_uri": "mysql://root:@127.0.0.1/renewa_10",
     "prod_uri": "mysql://root:@127.0.0.1/renewa_10",
     "fb_url": "https://facebook.com",
     "tw_url": "https://twitter.com",
