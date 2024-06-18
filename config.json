@@ -2,8 +2,8 @@
   "params":
   {
     "local_server": "False",
-    "local_uri": "mysql://sql12714514:IvkULqPVky@sql12.freesqldatabase.com:3306/sql12714514",
-    "prod_uri": "mysql://sql12714514:IvkULqPVky@sql12.freesqldatabase.com:3306/sql12714514",
+    "local_uri": "mysql://sql12714514:lvkULqPVky@sql12.freesqldatabase.com:3306/sql12714514",
+    "prod_uri": "mysql://sql12714514:lvkULqPVky@sql12.freesqldatabase.com:3306/sql12714514",
     "fb_url": "https://facebook.com",
     "tw_url": "https://twitter.com",
     "gt_url": "https://github.com",
